@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;  
+    font-family: 'Dela Gothic One', cursive;
+}
+
+header{
+    background-color: rgb(174, 134, 211);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width:100%; 
+    z-index: 100;
+}
+.navbar {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 47px;
+}
+.navbar .nav-list{
+    display: flex;
+}
+.navbar .nav-list li{
+    list-style: none;
+    padding: 0 3.5vw;
+    font-size: 1em;
+}
+.navbar .nav-list li a{
+    color: white;
+    text-decoration: none;
+}
+.navbar .nav-list li a:hover{
+    border-radius: 10px;
+    background-color:rgb(212, 78, 101);
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 3%;
+    top:13px;
+    display:none;
+}
+.lines{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+ .card1{
+    background-color: rgb(242, 228, 255);
+     height: 39vh; 
+    width:100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1 img{
+   
+    height: 29vh;
+    width: 50%;
+}
+ .card2{ 
+    height: 300px;
+    background-color:white;
+    min-width:100%; 
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 8%;
+}
+.card2 img{
+    width: 19vw;
+    height: 180px;
+}
+.card2 h1{
+    color: blueviolet;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.card2 .line{
+    font-size:1em;
+    height: 80px;
+    max-height: 150px;
+    width: 543px;
+}
+ #section2{
+    height: 35vh;
+    background-color: rgb(242, 228, 255);
+    height: 800px;
+    width:100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: blueviolet;
+    border-radius: 27px;
+    height: 75%;
+    width: 83%;
+    overflow-x: hidden;
+}
+.box h1{
+    padding: 13px 115px;
+    color: white;
+    font-size: 2em;
+}
+h2{
+    padding: 9px 53px;
+    color:rgb(42, 13, 121);
+    text-transform: capitalize;
+    font-size: 1.3em;
+}
+.three{ 
+    color: rgb(227, 207, 168);
+    padding: 0px 84px;
+    font-size: 0.9em;
+}
+ #section3{
+    background-color:white;
+    height: 594px;
+    width:100%; 
+}
+#section3 h1{
+    font-size: 2em;
+    padding: 60px 0 0 97px;
+}
+.boxes{
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   gap: 4vw;
+}
+.box2{
+    padding: 14px;
+    background-color: blue;
+    height: 342px;
+    width: 33%;
+    border-radius: 27px;
+    margin-top: 33px;
+}
+.do,.dont{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+}
+.letter{
+    display: block;
+    line-height: 42px;
+    padding: 7px 0px 0px 30px;
+    color: white;
+}
+.box3{
+    padding: 14px;
+    background-color: crimson;
+    height: 342px;
+    width: 33%;
+    border-radius: 27px;
+    margin-top: 33px;
+}
+#section4{
+    background-color: rgb(242, 228, 255);
+    height: 400px;
+    width: 100%;
+}
+#section4 h1{
+    text-align: center;
+    padding-top: 27px;
+    font-size: 34px;
+}
+
+.form input{
+    width: 33%;
+    display: block;
+    margin: 30px auto;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    padding: 2px 0;
+}
+button{
+    border-radius: 6px;
+    width: 78px;
+    height: 25px;
+    background-color: blueviolet;
+}
+.submit{
+    text-align: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    height: 57px;
+    width: 100%;
+}
+
+@media screen and (max-width:926px) and (min-width:629px){  
+     
+    .card1{
+        height: 100%;
+    }
+    .card1 img{
+        height: auto;
+        width: 50%;
+        margin: 23px 0;
+    }
+    .card2{
+        flex-direction: column;
+        height: 100%;
+    }
+    .card2 img{
+        width: 33%;
+        height: auto;
+        margin-top: 27px;
+    }
+    .card2 .line{
+        text-align: center;
+        width: 77%;
+        height: auto;
+        padding: 22px 0 33px 0;
+    }
+    #section2{
+        height: 100%; 
+    }
+    .box{
+        margin: 50px;
+        padding-bottom: 33px;
+    }
+    #section3{
+        height: 100%;
+    }
+    .boxes{
+        padding-bottom: 48px; 
+        flex-direction: column ;
+        gap: 15px;
+    }
+    .box2 {
+        padding: 10px;
+        background-color: blue;
+        height: auto; 
+        width: 54%;
+        margin-top: 28px;
+    }
+    .box3{
+        padding: 10px;
+        background-color: crimson;
+        height: auto; 
+        width: 54%;
+        margin-top: 28px;
+    }
+} 
+@media screen and (max-width: 628px){
+    .navbar{
+        height: 211px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .navbar .nav-list{
+        flex-direction: column;
+        gap:16px;
+    }
+    .navbar .nav-list li{
+        text-align: center;
+    } 
+    .burger{
+        display: block;
+        text-align: center; 
+    }
+    .h-nav-resp {
+        height: 47px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .card1{
+        height: 100%;
+    }
+    .card1 img{
+        height: auto;
+        width: 58%;
+        margin: 23px 0;
+    }
+    .card2{
+        flex-direction: column;
+        height: 100%;
+    }
+    .card2 img{
+        width: 33%;
+        height: auto;
+        margin-top: 27px;
+    }
+    .card2 .line{
+        text-align: center;
+        width: 77%;
+        height: auto;
+        padding: 22px 0 33px 0;
+    }
+    #section2{
+        height: 100%; 
+    }
+    .box{
+        margin: 50px;
+        padding-bottom: 33px;
+        width: 100%;
+    }
+    .box h1{
+        font-size: 1.6em;
+        padding: 0;
+        text-align: center;
+        margin: 16px 0;
+    }
+    h2{
+        font-size: .8em;
+        width: 65%;
+        height: auto; 
+    }
+    .three{
+        width: 49%;
+        padding: 0 63px;
+        font-size: 0.8em;
+        font-weight: 100;
+        height: auto;
+    }
+    #section3{
+        height: 100%;
+    }
+    #section3 h1{
+        font-size: 1.6em;
+        text-align: center;
+        padding: 15px 0;
+    }
+    .boxes{
+        padding-bottom: 48px; 
+        flex-direction: column ;
+        gap: 15px;
+    }
+    .do,.dont{
+        font-size: 1.3em;
+    }
+    .letter{
+        font-size: 0.65em;
+        line-height: 20px;
+        padding: 6px 40px;
+    }
+    .box2 {
+        padding: 25px;
+        background-color: blue;
+        height: auto; 
+        width: 54%;
+        margin-top: 28px;
+    }
+    .box3{
+        padding: 25px;
+        background-color: crimson;
+        height: auto; 
+        width: 54%;
+        margin-top: 28px;
+    }
+    #section4 h1{
+      font-size: 21px;
+    }
+    .form input{
+        width: 52%;
+    }
+    footer{
+        font-size: 60%;
+        font-weight: 100;
+    }
+}
+
+
+
+  
